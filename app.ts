@@ -26,6 +26,13 @@ const phase = "Result is ";
 const person = {
   name: "max",
   age: 30,
+  hobbies: ["sport", "cooking"],
 };
 
-console.log(person.name);
+// console.log(person.name);
+let favoriteActivities: string[];
+favoriteActivities = ["sport", "musics"];
+
+for (const hobby of person.hobbies) {
+  console.log(hobby.toUpperCase());
+}
