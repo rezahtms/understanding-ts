@@ -22,4 +22,10 @@ const number2 = 5;
 const showResult = true;
 const phase = "Result is ";
 // const result = add(number1, number2, showResult);
-add(number1, number2, showResult, phase);
+// add(number1, number2, showResult, phase);
+const person = {
+  name: "max",
+  age: 30,
+};
+
+console.log(person.name);
