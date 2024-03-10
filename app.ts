@@ -21,23 +21,26 @@ const number1 = 5;
 const number2 = 5;
 const showResult = true;
 const phase = "Result is ";
+enum Role {
+  ADMIN,
+  AUTHOR,
+  READ_ONLY,
+}
 // const result = add(number1, number2, showResult);
 // add(number1, number2, showResult, phase);
-const person: {
-  name: string;
-  age: number;
-  hobbies: string[];
-  role: [number, string];
-} = {
+const person = {
   name: "max",
   age: 30,
   hobbies: ["sport", "cooking"],
-  role: [0, "author"],
+  role: Role.ADMIN,
 };
 
 // console.log(person.name);
 let favoriteActivities: string[];
 favoriteActivities = ["sport", "musics"];
+if (person.role === Role.ADMIN) {
+  console.log("is admin: " + person.name);
+}
 
 for (const hobby of person.hobbies) {
   console.log(hobby.toUpperCase());
