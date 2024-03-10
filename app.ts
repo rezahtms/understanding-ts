@@ -23,10 +23,16 @@ const showResult = true;
 const phase = "Result is ";
 // const result = add(number1, number2, showResult);
 // add(number1, number2, showResult, phase);
-const person = {
+const person: {
+  name: string;
+  age: number;
+  hobbies: string[];
+  role: [number, string];
+} = {
   name: "max",
   age: 30,
   hobbies: ["sport", "cooking"],
+  role: [0, "author"],
 };
 
 // console.log(person.name);
